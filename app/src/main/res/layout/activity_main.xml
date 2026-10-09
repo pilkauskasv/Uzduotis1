@@ -19,4 +19,11 @@
         android:layout_height="wrap_content"
         android:text="Keisti tekstą" />
 
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keisti teksto spalvą" />
+
 </LinearLayout>
+

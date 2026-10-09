@@ -4,6 +4,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
+// ...
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView)
         val btnText = findViewById<Button>(R.id.btnText)
+
+        val btnColor = findViewById<Button>(R.id.btnColor)
+
+        btnColor.setOnClickListener {
+            textView.setTextColor(Color.RED)
+        }
 
         btnText.setOnClickListener {
             textView.text = "Sveikas, pasauli!"
